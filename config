@@ -1,6 +1,6 @@
 # Irssi config. {{{1
-# Patrick Brisbin (https://github.com/pbrisbin/dotfiles/tree/master/.irssi) 
-# Modified by Tom Vincent (2011) <http://tlvince.com/contact/>
+# Patrick Brisbin (https://github.com/ptlvince/dotfiles/tree/master/.irssi) 
+# Forked by Tom Vincent (2011) <http://tlvince.com/contact/>
 # vim: ft=config fdm=marker
 
 servers = (
@@ -27,7 +27,7 @@ servers = (
 );
 
 chatnets = {
-  freenode = { type = "IRC"; nick = "brisbin"; };
+  freenode = { type = "IRC"; nick = "tlvince"; };
   oftc = { type = "IRC"; };
   bitlbee = { type = "IRC"; };
 };
@@ -182,9 +182,9 @@ statusbar = {
 
 settings = {
   core = {
-    real_name = "Patrick Brisbin";
-    user_name = "patrick";
-    nick = "brisbin";
+    real_name = "Tom Vincent";
+    user_name = "tom";
+    nick = "tlvince";
     awaylog_file = "/dev/null";
     recode_autodetect_utf8 = "yes";
     recode_fallback = "CP1252";
@@ -221,8 +221,8 @@ ignores = (
 );
 
 hilights = (
-  { text = "brisbin"; nick = "no"; word = "yes"; fullword = "yes"; },
-  { text = "pbrisbin.com"; nick = "no"; word = "yes"; fullword = "no"; }
+  { text = "tlvince"; nick = "no"; word = "yes"; fullword = "yes"; },
+  { text = "tlvince.com"; nick = "no"; word = "yes"; fullword = "no"; }
 );
 
 logs = { };
