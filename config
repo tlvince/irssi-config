@@ -1,9 +1,6 @@
 # Irssi config. {{{1
 # Patrick Brisbin (https://github.com/pbrisbin/dotfiles/tree/master/.irssi) 
-#    Further reading: http://pbrisbin.com/posts/irssi/
-#
 # Modified by Tom Vincent (2011) <http://tlvince.com/contact/>
-#
 # vim: ft=config fdm=marker
 
 servers = (
@@ -287,3 +284,4 @@ mainwindows = {
   1 = { first_line = "12"; lines = "72"; };
   2 = { first_line = "1"; lines = "11"; };
 };
+
