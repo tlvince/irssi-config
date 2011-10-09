@@ -1,8 +1,10 @@
-# vim:ft=config
+# Irssi config. {{{1
+# Patrick Brisbin (https://github.com/pbrisbin/dotfiles/tree/master/.irssi) 
+#    Further reading: http://pbrisbin.com/posts/irssi/
 #
-# further reading: http://pbrisbin.com/posts/irssi/
+# Modified by Tom Vincent (2011) <http://tlvince.com/contact/>
 #
-###
+# vim: ft=config fdm=marker
 
 servers = (
   {
