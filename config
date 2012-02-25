@@ -1,6 +1,5 @@
 # Irssi config. {{{1
-# Patrick Brisbin (https://github.com/ptlvince/dotfiles/tree/master/.irssi) 
-# Forked by Tom Vincent (2011) <http://tlvince.com/contact/>
+# Copyright 2011-2012 Tom Vincent <http://tlvince.com/contact/>
 # vim: ft=config fdm=marker
 
 servers = (
@@ -26,7 +25,7 @@ servers = (
   { address = "localhost"; chatnet = "bitlbee"; autoconnect = "yes"; },
   {
     address = "192.168.1.1";
-    chatnet = "screadr";
+    chatnet = "local";
     port = "6698";
     use_ssl = "no";
     ssl_verify = "no";
@@ -38,13 +37,13 @@ chatnets = {
   freenode = { type = "IRC"; nick = "tlvince"; };
   oftc = { type = "IRC"; };
   bitlbee = { type = "IRC"; };
-  screadr = { type = "IRC"; nick = "tom"; };
+  local = { type = "IRC"; nick = "tom"; };
 };
 
 channels = (
   { name = "#archlinux"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#xmonad"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "#dev"; chatnet = "screadr"; autojoin = "yes"; }
+  { name = "#dev"; chatnet = "local"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -243,7 +242,7 @@ windows = {
         type = "CHANNEL";
         chat_type = "IRC";
         name = "#dev";
-        tag = "screadr";
+        tag = "local";
       }
     );
   };
