@@ -220,6 +220,8 @@ settings = {
     hilightwin_showprivmsg = "no";
     bitlbee_send_typing = "yes";
     lt_in_queries = "yes";
+    away_reason = "Away from keyboard";
+    autoaway = "300";
   };
 };
 
