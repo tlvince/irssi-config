@@ -7,5 +7,4 @@ irssi-script-link-titles	link_titles.pl
 irssi-script-nm	nm.pl
 irssi-script-queryresume	queryresume.pl
 irssi-script-sasl	cap_sasl.pl
-irssi-script-spellcheck	spellcheck.pl
 irssi-script-trackbar	trackbar.pl
