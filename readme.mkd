@@ -12,7 +12,7 @@ the irssi scripts as listed in `script-list`.
 Originally forked from [pbrisbin's dotfiles][1] and filtered into it's own
 repository using David Underhill's [git filter-branch][2] script.
 
-Copyright 2010 Patrick Brisbin
+Copyright 2010-2011 Patrick Brisbin  
 Copyright 2010-2012 Tom Vincent <http://tlvince.com/contact/>
 
   [1]: https://github.com/pbrisbin/dotfiles
