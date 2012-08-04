@@ -127,6 +127,7 @@ statusbar = {
         active = { };
         act = { };
         typing_notice = { };
+        otr = { };
       };
     };
 
