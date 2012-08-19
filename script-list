@@ -1,6 +1,7 @@
 irssi-script-advanced-windowlist	adv_windowlist.pl
 irssi-script-away	away.pl
 irssi-script-bitlbee-typing-notice	bitlbee_typing_notice.pl
+irssi-script-bitlbee-tab-completion	bitlbee_tab_completion.pl
 irssi-script-dictionary-complete	dictcomplete.pl
 irssi-script-hilightwin	hilightwin.pl
 irssi-script-link-titles	link_titles.pl
