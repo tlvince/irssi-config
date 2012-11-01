@@ -43,7 +43,6 @@ chatnets = {
 
 channels = (
   { name = "#archlinux"; chatnet = "freenode"; autojoin = "Yes"; },
-  { name = "#xmonad"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#dev"; chatnet = "local"; autojoin = "yes"; }
 );
 
