@@ -91,9 +91,9 @@ statusbar = {
     topic_empty = " Irssi v$J - http://irssi.org/help/";
 
     # all of these treated specially, they're only displayed when needed
-    lag = "{sb Lag: $0-}";
+    lag = "{sb Lag: %m$0-%n}";
     act = "{sb Act: $0-}";
-    more = "-- more --";
+    more = "%k%3-- more --%n";
   };
 
   # there's two type of statusbars. root statusbars are either at the top
@@ -201,7 +201,8 @@ settings = {
 
   "fe-common/core" = {
     emphasis = "OFF";
-    theme = "my";
+    theme = "colours/solarized-universal";
+    hilight_color = "= %R";
     beep_msg_level = "NOTICE MSGS HILIGHT";
     bell_beeps = "no";
     hilight_nick_matches = "no";
@@ -211,7 +212,10 @@ settings = {
 
   "perl/core/scripts" = {
     neat_maxlength = "13";
-    awl_display_key = "%w$N.$H$C$S";
+    awl_display_key_active = "%k%2[$Q=$N:$C]%n";
+    awl_display_nokey_active = "%k%2[$N:$C]%n";
+    awl_display_key = "[$Q:$H$C$S]";
+    awl_display_nokey = "[$N:$H$C$S]";
     awl_position = "0";
     awl_sbar_maxlength = "no";
     awl_maxlines = "3";
@@ -230,8 +234,8 @@ ignores = (
 );
 
 hilights = (
-  { text = "tlvince"; nick = "no"; word = "yes"; fullword = "yes"; },
-  { text = "tlvince.com"; nick = "no"; word = "yes"; fullword = "no"; }
+  { text = "tlvince"; nick = "no"; word = "yes"; fullword = "yes"; color = "%M"; },
+  { text = "tlvince.com"; nick = "no"; word = "yes"; fullword = "no"; color = "%M"; }
 );
 
 logs = { };
