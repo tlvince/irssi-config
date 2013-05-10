@@ -4,8 +4,10 @@ My irssi config.
 
 ## Install
 
-If using Arch Linux, install `aurget` and try `make install`. Otherwise, install
-the irssi scripts as listed in `script-list`.
+If using Arch Linux, install `aurget` and try `make install-archlinux`. This
+will install irssi scripts using AUR packages.
+
+Otherwise, run `make install` to install them locally.
 
 ## Colophon
 
@@ -13,7 +15,7 @@ Originally forked from [pbrisbin's dotfiles][1] and filtered into it's own
 repository using David Underhill's [git filter-branch][2] script.
 
 Copyright 2010-2011 Patrick Brisbin  
-Copyright 2010-2012 Tom Vincent <http://tlvince.com/contact/>
+Copyright 2010-2013 Tom Vincent <http://tlvince.com/contact/>
 
   [1]: https://github.com/pbrisbin/dotfiles
   [2]: http://dound.com/2009/04/git-forever-remove-files-or-folders-from-history/
