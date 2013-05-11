@@ -9,6 +9,12 @@ will install irssi scripts using AUR packages.
 
 Otherwise, run `make install` to install them locally.
 
+## Usage
+
+1. Create an `sasl.auth` file with the contents:
+
+        freenode	username	password	DH-BLOWFISH
+
 ## Colophon
 
 Originally forked from [pbrisbin's dotfiles][1] and filtered into it's own
