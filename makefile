@@ -1,26 +1,29 @@
-# A brittle script to bootstrap irssi scripts from AUR packages.
-# Copyright 2012 Tom Vincent <http://tlvince.com/contact/>
+# Bootstrap irssi scripts.
+# © 2013 Tom Vincent <http://tlvince.com/contact>
 
-list=script-list
-scripts=$$HOME/proj/pkgbuild
+PREFIX?=scripts/autorun
+INSTALLDIR?=$(DESTDIR)$(PREFIX)
+
+SCRIPTS=scripts.csv
 
 all: install
 
-install:
-	mkdir -p scripts/autorun
-	aurget -S --deps --noconfirm `cut -f 1 $(list)`
-	for i in `cut -f 2 $(list)`; do \
+init:
+	mkdir -p $(INSTALLDIR)
+
+install: init
+	cd $(INSTALLDIR); \
+	for script in `cut -d ',' -f 2 ../../$(SCRIPTS)`; do \
+		curl -O "$$script"; \
+	done
+
+install-archlinux: init
+	aurget -S --deps --noconfirm `cut ',' -f 3 $(SCRIPTS)`
+	for i in `cut -d ',' -f 1 $(SCRIPTS)`; do \
 		ln -s /usr/share/irssi/scripts/$$i scripts/autorun; \
 	done
 
-gen-list:
-	for i in $(scripts)/irssi-script-*; do \
-		script=`basename $$i`; \
-		echo -ne "$$script\t" >> $(list); \
-		grep "^_name" "$(scripts)/$$script/PKGBUILD" | sed "s/_name=//" >> $(list); \
-	done
+uninstall:
+	rm -rf $(INSTALLDIR)
 
-clean:
-	rm -rf $(list) scripts
-
-.PHONY: all install gen-list clean
+.PHONY: all init install install-archlinux uninstall
