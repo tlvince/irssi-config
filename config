@@ -244,9 +244,27 @@ ignores = (
 );
 
 hilights = (
-  { text = "tlvince"; nick = "no"; word = "yes"; fullword = "yes"; color = "%M"; },
-  { text = "tlvince.com"; nick = "no"; word = "yes"; fullword = "no"; color = "%M"; }
-  { text = "@Tom"; nick = "no"; word = "yes"; fullword = "yes"; color = "%M"; }
+  {
+    text = "tlvince";
+    nick = "no";
+    word = "yes";
+    fullword = "yes";
+    color = "%M";
+  },
+  {
+    text = "tlvince.com";
+    nick = "no";
+    word = "yes";
+    fullword = "no";
+    color = "%M";
+  },
+  {
+    text = "@Tom";
+    nick = "no";
+    word = "yes";
+    fullword = "yes";
+    color = "%M";
+  }
 );
 
 logs = { };
