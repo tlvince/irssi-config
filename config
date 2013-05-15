@@ -32,6 +32,12 @@ servers = (
     ssl_verify = "yes";
     ssl_capath = "/etc/ssl/certs/";
     autoconnect = "no";
+  },
+  {
+    address = "localhost";
+    chatnet = "znc";
+    port = "6668";
+    autoconnect = "yes";
   }
 );
 
@@ -40,6 +46,7 @@ chatnets = {
   oftc = { type = "IRC"; };
   bitlbee = { type = "IRC"; };
   flowdock = { type = "IRC"; nick = "Tom"; };
+  znc = { type = "IRC"; };
 };
 
 aliases = {
