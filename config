@@ -197,7 +197,7 @@ settings = {
 
   "fe-common/core" = {
     emphasis = "OFF";
-    theme = "colours/solarized-universal";
+    theme = "themes/solarized/solarized-universal";
     hilight_color = "= %R";
     beep_msg_level = "NOTICE MSGS HILIGHT";
     bell_beeps = "no";
