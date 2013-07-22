@@ -255,6 +255,13 @@ hilights = (
     word = "yes";
     fullword = "yes";
     color = "%M";
+  },
+  {
+    text = "onarray";
+    nick = "no";
+    word = "yes";
+    fullword = "yes";
+    color = "%M";
   }
 );
 
