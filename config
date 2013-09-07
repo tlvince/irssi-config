@@ -31,7 +31,7 @@ servers = (
     use_ssl = "yes";
     ssl_verify = "yes";
     ssl_capath = "/etc/ssl/certs/";
-    autoconnect = "no";
+    autoconnect = "yes";
   },
   {
     address = "localhost";
