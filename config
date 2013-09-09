@@ -204,7 +204,7 @@ settings = {
 
   "fe-common/core" = {
     emphasis = "OFF";
-    theme = "themes/solarized/solarized-universal";
+    theme = "themes/pbrisbin";
     hilight_color = "= %R";
     beep_msg_level = "NOTICE MSGS HILIGHT";
     bell_beeps = "no";
