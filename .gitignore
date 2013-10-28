@@ -5,3 +5,4 @@ config.autosave
 default.theme
 saved_colors
 startup
+logs
