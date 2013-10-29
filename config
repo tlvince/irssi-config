@@ -215,8 +215,8 @@ settings = {
 
   "perl/core/scripts" = {
     neat_maxlength = "13";
-    awl_display_key = "%w$H$N:$C$S ";
-    awl_display_key_active = "%k$N:$C ";
+    awl_display_key = "%K$H$N:$C$S ";
+    awl_display_key_active = "%w$N:$C ";
     awl_position = "0";
     awl_sbar_maxlength = "no";
     awl_maxlines = "3";
