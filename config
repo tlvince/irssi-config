@@ -204,7 +204,7 @@ settings = {
 
   "fe-common/core" = {
     emphasis = "OFF";
-    theme = "themes/pbrisbin";
+    theme = "tlvince";
     hilight_color = "= %R";
     beep_msg_level = "NOTICE MSGS HILIGHT";
     bell_beeps = "no";
