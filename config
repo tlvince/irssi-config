@@ -25,19 +25,18 @@ servers = (
 
   { address = "localhost"; chatnet = "bitlbee"; autoconnect = "yes"; },
   {
-    address = "irc.flowdock.com";
-    chatnet = "flowdock";
-    port = "6697";
-    use_ssl = "yes";
-    ssl_verify = "yes";
-    ssl_capath = "/etc/ssl/certs/";
-    autoconnect = "yes";
-  },
-  {
     address = "localhost";
     chatnet = "znc";
     port = "6668";
     autoconnect = "yes";
+  },
+  {
+    address = "irc.gnome.org";
+    chatnet = "gnome";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "no";
   }
 );
 
@@ -45,8 +44,8 @@ chatnets = {
   freenode = { type = "IRC"; nick = "tlvince"; };
   oftc = { type = "IRC"; };
   bitlbee = { type = "IRC"; };
-  flowdock = { type = "IRC"; nick = "Tom"; };
   znc = { type = "IRC"; };
+  gnome = { type = "IRC"; nick = "tlvince"; };
 };
 
 aliases = {
