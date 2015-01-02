@@ -21,8 +21,11 @@ servers = (
     ssl_verify = "no";
     autoconnect = "no";
   },
-
-  { address = "localhost"; chatnet = "bitlbee"; autoconnect = "yes"; },
+  {
+    address = "localhost";
+    chatnet = "bitlbee";
+    autoconnect = "no";
+  },
   {
     address = "localhost";
     chatnet = "znc";
